@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <link rel="stylesheet" href="C.-V.css">
+     <title>Сайт-визитка</title>
+     <style>
+            body{
+                background: url(Apo7X-201127-19.jpg)
+                 background-size: 100%;
+                 color: #fff;
+                 background-attachment: fixed;
+                 font-family: segoe script
+     </style>
+</head>
+<body bgcolor="#000" background="Apo7X-201127-19.jpg"></body>
+<body>
+<div align="center">
+    <h1>Сайт-визитка</h1>
+</div>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+<div class="panel-container">
+    <div class="panel active" style="background-image: url('FB_IMG_1630522293880.jpg')">
+        <div>Я на виндсёрфинге</div>
+    </div>
+    <div class="panel" style="background-image: url('xvtPqT5OVps.jpg')">
+        <div>Я с классом</div>
+    </div>
+    <div class="panel" style="background-image: url('NvD8A_6_-zM.jpg')">
+        <div>Опять я куда-то не туда смотрю &#128529</div>
+    </div>
+    <div class="panel" style="background-image: url('IMG-20210813-WA0000.jpg')">
+        <div>Я в Коктебеле</div>
+    </div>
+    <div class="panel" style="background-image: url('IMG_20210508_164927_BURST002.jpg')">
+        <div>Я и заброшенный МТЛБ</div>
+    </div>
+</div>
+
+<div><b>
+    <p>ИМЯ: <i><u>Клавдия/Клава</u></i></p>
+    <p>ОТЧЕСТВО: <i><u>Борисовна</u></i></p>
+    <p>ФАМИЛИЯ: <i><u>Кисельникова</u></i></p>
+    <p>ДАТА РОЖДЕНИЯ: <i><u>12 ноября 2003г.</u></i></p>
+    <p>СТАТУС: <i><u>ЖИВА ;)</u></i>(Ученица)</p>
+    <p>ХОББИ: <i><u>виндсёрфинг, рукоделие, музыка</u></i> и др.</p>
+    <p><a href="https://vk.com/klavdiya2003" style="color: #EAFA05"><i><u>https://vk.com/klavdiya2003</u></i></a><br>
+        тел: <i><u>+7-985-982-09-68</u></i>
+    </p>
+</b>
+</div>
+<script>
+    const panels = document.querySelectorAll('.panel');
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses();
+        panel.classList.add('active');
+    });
+});
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active');
+    });
+}
+</script>
+</div >
+</body>
+</html>
